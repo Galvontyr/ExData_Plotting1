@@ -23,7 +23,7 @@ Datetime <- strptime(x, "%d/%m/%Y %H:%M:%S")
 tidyset <- cbind(Datetime, get_data[c(-1,-2)])
 
 ####PLOTTING####
-png(filename = "plot4.png", width = 480, height = 480)
+png(filename = "plot4.png", width = 480, height = 480, bg = "transparent")
 par(mfcol = c(2,2))
 
 #plot[1,1]

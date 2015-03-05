@@ -24,7 +24,7 @@ tidyset <- cbind(Datetime, get_data[c(-1,-2)])
 
 
 ####PLOTTING####
-png(filename = "plot1.png", width = 480, height = 480)
+png(filename = "plot1.png", width = 480, height = 480, bg = "transparent")
 hist(tidyset$Global_active_power, xlab = "Global Active Power (kilowatts)", 
                 col = "red", main = "Global Active Power")
 dev.off()

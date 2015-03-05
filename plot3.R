@@ -24,7 +24,7 @@ tidyset <- cbind(Datetime, get_data[c(-1,-2)])
 
 
 ####PLOTTING####
-png(filename = "plot3.png", width = 480, height = 480)
+png(filename = "plot3.png", width = 480, height = 480, bg = "transparent")
 plot(tidyset$Datetime, tidyset$Sub_metering_1, type = "l", 
         xlab=" ", ylab = "Energy sub metering")
 points(tidyset$Datetime, tidyset$Sub_metering_2, type = "l", col = "red")
